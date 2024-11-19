@@ -1,47 +1,161 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-header {
-    background: #000000;
-    color: #fff;
-    padding: 20px 10px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 80px 0;
     text-align: center;
-}
-nav ul {
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  header p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #333;
+  }
+  
+  nav ul {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    background: #333;
-    margin: 0;
     list-style: none;
-}
-nav ul li {
-    margin: 0 10px;
-}
-nav ul li a {
-    color: #fff;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav ul li a:hover {
+    color: #FF6F61;
+    transform: scale(1.1);
+  }
+  
+  /* About Section */
+  #about {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 1.125rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Projects Section */
+  #projects {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f4f4f4;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .card a {
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
-}
-section {
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 800px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-footer {
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 0;
+    background-color: white;
     text-align: center;
-    padding: 10px;
-    background: #000000;
-    color: #fff;
-    position: fixed;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 1.125rem;
+  }
+  
+  #contact a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
     bottom: 0;
-    width: 100%;
-}
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
