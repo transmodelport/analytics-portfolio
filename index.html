@@ -4,39 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Analytics Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Data Analytics Portfolio</h1>
-        <p>Hi, I'm Justin, a data enthusiast skilled in Python, SQL, and visualization.</p>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Welcome to My Data Analytics Portfolio</h1>
+            <p class="mt-2 text-lg">Hi, I'm Justin Joseph, a data enthusiast skilled in Python, SQL, and visualization.</p>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white">
+        <ul class="flex justify-center space-x-6 py-4">
+            <li><a href="#about" class="hover:underline">About Me</a></li>
+            <li><a href="#projects" class="hover:underline">Projects</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
     </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate Data Analyst with a background in transportation and logistics. I specialize in turning data into actionable insights, optimizing processes, and solving complex problems. Proficient in SQL, Python, and data visualization tools, I excel at storytelling for both technical and non-technical audiences.
-            With experience in modeling and analysis, I thrive on uncovering trends and delivering solutions that drive efficiency and decision-making. I am committed to leveraging data to create impactful outcomes in dynamic environments.</p>
+
+    <!-- About Section -->
+    <section id="about" class="py-10">
+        <div class="container mx-auto max-w-4xl bg-white p-6 rounded-lg shadow">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-lg">[I am a passionate Data Analyst with a background in transportation and logistics. I specialize in turning data into actionable insights, optimizing processes, and solving complex problems. Proficient in SQL, Python, and data visualization tools, I excel at storytelling for both technical and non-technical audiences. With experience in modeling and analysis, I thrive on uncovering trends and delivering solutions that drive efficiency and decision-making. I am committed to leveraging data to create impactful outcomes in dynamic environments.]</p>
+        </div>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="projects/project1.html">Project 1: [Title]</a></li>
-            <li><a href="projects/project2.html">Project 2: [Title]</a></li>
-        </ul>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-10 bg-gray-200">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project Card -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold">Project 1: [Title]</h3>
+                    <p class="mt-2">A brief description of the project.</p>
+                    <a href="projects/project1.html" class="text-blue-600 hover:underline mt-4 block">Learn more →</a>
+                </div>
+                <!-- Project Card -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold">Project 2: [Title]</h3>
+                    <p class="mt-2">A brief description of the project.</p>
+                    <a href="projects/project2.html" class="text-blue-600 hover:underline mt-4 block">Learn more →</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-        <p><a href="https://github.com/transmodelport">GitHub</a> | <a href="https://linkedin.com/in/josephmjustin">LinkedIn</a></p>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10">
+        <div class="container mx-auto max-w-4xl bg-white p-6 rounded-lg shadow">
+            <h2 class="text-3xl font-bold mb-4">Contact</h2>
+            <p class="text-lg">Email: <a href="mailto:josephmjustin@gmail.com" class="text-blue-600 hover:underline">josephmjustin@gmail.com</a></p>
+            <p class="text-lg mt-2">
+                <a href="https://github.com/transmodelport" class="text-blue-600 hover:underline">GitHub</a> |
+                <a href="https://linkedin.com/in/josephmjustin" class="text-blue-600 hover:underline">LinkedIn</a>
+            </p>
+        </div>
     </section>
-    <footer>
-        <p>© 2024 [Justin Joseph]. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+        <p>© 2024 Justin Joseph. All rights reserved.</p>
     </footer>
 </body>
 </html>
