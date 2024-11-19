@@ -1,5 +1,9 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: [
+    './index.html', // Add your HTML file here
+    './**/*.html',  // Add any other HTML files in your project
+    './**/*.js',    // If you're using Tailwind CSS classes in JS files
+  ],
   theme: {
     extend: {
       colors: {
@@ -15,4 +19,5 @@ module.exports = {
       },
     },
   },
+  plugins: [],
 };
